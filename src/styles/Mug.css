@@ -101,3 +101,12 @@ img:hover {
   color: #b17968;
 }
 
+.oldPrice { 
+  margin-top: auto;
+  margin-bottom: auto;
+  display: inline;
+  color: #95979d;
+  font-size: 80%;
+  text-decoration: line-through;
+}
+

@@ -25,7 +25,9 @@ const Mug = ({ url, isSale, name, price, sale }) => {
         >
           ${sale}USD
         </p>
-        <p className="basicPrice">${price}USD</p>
+        <p className={isSale ? 'oldPrice' : 'basicPrice'}>
+          ${price}USD
+        </p>
       </div>
     </div>
   );
