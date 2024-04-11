@@ -1,20 +1,20 @@
 import React from "react";
 import Mug from "./Mug";
 import "../styles/MoreProducts.css";
-import "../styles/Content.css";
+import "../styles/FeaturedMugs.css";
 const mugsData = [
   {
     url: "./Mugs/trent-erwin.jpg",
     name: "Red Love Cup",
-    price: "25.00",
-    sale: "37.00",
+    price: "37.00",
+    sale: "25.00",
     isSale: true,
   },
   {
     url: "./Mugs/steve-harvey.jpg",
     name: "Black Tea Cup",
-    price: "15.00",
-    sale: "29.00",
+    price: "29.00",
+    sale: "15.00",
     isSale: true,
   },
   {
@@ -64,7 +64,7 @@ const mugsData = [
 const MoreProducts = ({ display, data }) => {
   return (
     <div className="moreProductsSection">
-      {display && <p className="third-para">MORE PRODUCTS</p>}
+      {display && <p className="smallTitle">MORE PRODUCTS</p>}
       <br />
       <div className="moreProducts">
         {(data || mugsData).map((element) => {

@@ -1,7 +1,17 @@
 .featured {
+  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;  
   margin-left: 18%;
   margin-right: 18%;
+}
+
+.smallTitle {
+  font-size: 70%;
+  color: #9c9da4;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  margin-top: 80px;
 }

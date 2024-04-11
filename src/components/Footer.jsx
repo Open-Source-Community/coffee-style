@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "../styles/Footer.css"
 const Footer = () => {
   return (
-    <div>
+    <div className="footer">
       <div>
         <img src="./CoffeeStyle Logo.png" alt="Header-Pic" width={"100px"} />
         <ul>

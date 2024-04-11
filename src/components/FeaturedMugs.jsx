@@ -19,10 +19,13 @@ const mugsData = [
 ];
 const FeaturedMugs = () => {
   return (
-    <div className="moreProducts">
-      {mugsData.map((data) => {
-        return <Mug {...data} />;
-      })}
+    <div>
+      <p className="smallTitle">FEATURED MUGS</p>
+      <div className="featured">
+        {mugsData.map((data) => {
+          return <Mug {...data} />;
+        })}
+      </div>
     </div>
   );
 };

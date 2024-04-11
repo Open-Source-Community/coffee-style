@@ -5,7 +5,7 @@ import "../styles/FeaturedMugs.css";
 const Offer = () => {
   return (
     <div>
-      <p class="third-para">BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE</p>
+      <p class="smallTitle">BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE</p>
       <div class="premiumFlex">
         <div class="rightSide">
           <p class="premiumOfferF">PREMIUM OFFER</p>
