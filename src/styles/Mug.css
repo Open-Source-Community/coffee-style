@@ -5,30 +5,39 @@ img:hover {
 
 .mugImage {
   position: relative;
-  width: 450px; 
-  height: 550px; 
+  width: 450px;
+  height: 550px;
   object-fit: cover;
 }
 
 .image {
   position: relative;
+  width: 100%;
+  height: 87%;
+  z-index: 3;
+  opacity: 100%;
 }
 
 .overlay {
-  width: 450px; 
-  height: 550px; 
-  background: black;
-  overflow: hidden;
+  width: 100%;
+  height: 99.5%;
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.5s;
+  z-index: 4;
 }
 
-.mugImage:hover {
-  opacity: 0.8;
+.image:hover .overlay {
+  background-color: rgba(0,0,0,0.1);
+  
 }
 
-.image:hover > #explore { 
-  visibility: visible;
+.image:hover .overlay #explore {
+  margin-top: -1%;
+  opacity: 1;
 }
-
 
 #onSale {
   position: absolute;
@@ -37,7 +46,7 @@ img:hover {
   width: 21%;
   height: 8%;
   color: #aa6f5f;
-  background-color:#ffffff;
+  background-color: #ffffff;
   border: none;
   font-size: 82%;
   font-weight: 700;
@@ -48,18 +57,16 @@ img:hover {
   font-family: "Open Sans", sans-serif;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  
+
 }
 
 #explore {
-  visibility: hidden;
   position: absolute;
-  top: auto;
-  bottom: 0%;
+  top: 92%;
   left: 50%;
   width: 90%;
   height: 10%;
-  background-color:#ffffff;
+  background-color: #ffffff;
   border: none;
   color: #292b38;
   font-weight: 700;
@@ -71,6 +78,8 @@ img:hover {
   font-family: "Open Sans", sans-serif;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.5s;
 }
 
 .muglink {
@@ -83,6 +92,7 @@ img:hover {
 .mug {
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .basicPrice {
@@ -101,7 +111,7 @@ img:hover {
   color: #b17968;
 }
 
-.oldPrice { 
+.oldPrice {
   margin-top: auto;
   margin-bottom: auto;
   display: inline;
@@ -109,4 +119,3 @@ img:hover {
   font-size: 80%;
   text-decoration: line-through;
 }
-

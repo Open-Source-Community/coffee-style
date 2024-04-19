@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Cards.css";
 import "../styles/Content.css";
-import "../styles/Mug.css";
+import "../styles/MoreProducts.css";
 import "../styles/Offer.css";
 import "../styles/FeaturedMugs.css";
 
@@ -27,26 +27,28 @@ const cardsData = [
 ];
 
 const Cards = () => {
-  return ( 
-    <div>
+  return (
+    <>
       <br />
       <div class="smallTitle">BEHIND THE MUGS, LIFESTYLE STORIES</div>
-      <div class="flexCards">
-      {cardsData.map(({ url, link, text, time }) => {
-        return (
-          <div class="storyCard">
-            <div class="storyContainer">
-              <img class="imageOfStories" src={url} alt="" width={"500px"} />
-              <button id="storyButton">READ THE FULL STORY</button>
+      <div class="moreProducts">
+        {cardsData.map(({ url, link, text, time }) => {
+          return (
+            <div class="mug">
+              <div className="image">
+                <div class="overlay">
+                  <button id="explore">READ THE FULL STORY</button>
+                </div>
+                <img class="mugImage" src={url} alt="" />
+              </div>
+              <button class="storyLink">{link}</button>
+              <p class="premiumOfferT">{text}</p>
+              <p class="date">{time}</p>
             </div>
-            <button class="storyLink">{link}</button>
-            <p class="premiumOfferT">{text}</p>
-            <p class="date">{time}</p>
-          </div>
-        );
-      })}
+          );
+        })}
       </div>
-    </div>
+    </>
   );
 };
 

@@ -11,7 +11,7 @@
 }
 
 .carousel.carousel-slider {
-    width: 60% !important;
+    width: 65% !important;
     margin: 0 auto;
     overflow: visible;
     padding-bottom: .6rem;
@@ -46,6 +46,7 @@
 .slideImage {
     width: 50% !important;
     object-fit: cover;
+    margin-right: 90px;
 }
 
 .textOverlay {
@@ -55,6 +56,8 @@
     width: 40%;
     justify-content: space-evenly;
     flex-direction: column;
+    margin: auto 0;
+    gap: 20px;
 }
 
 .carousel .control-dots .dot {
@@ -68,4 +71,33 @@
 .slide {
     padding-bottom: 2rem;
     height: 28rem;
+}
+
+.casual-button2 {
+    background-color: #1d1f2e;
+    color: white;
+    width: 220px;
+    height: 50px;
+    font-weight: 550;
+    padding: 0;
+    border: none;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.smallTitle2 {
+    font-size: 70%;
+    color: #9c9da4;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.content {
+    margin-top: 0%;
+    font-size: 90%;
+    color: #7c6d7d;
+    line-height: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
 }

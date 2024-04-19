@@ -3,7 +3,8 @@ import "../styles/Parallel.css";
 const Parallel = () => {
   return (
     <>
-      <div class="transparentSection"></div>
+      <div className="transparentSection">
+      </div>
     </>
   );
 };

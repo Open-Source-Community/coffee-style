@@ -2,6 +2,8 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import "../styles/SlideShow.css";
+import "../styles/HeaderSection.css";
+import "../styles/Content.css"
 const data = [
   {
     url: "../../Section_2/bar-cafe-caffeine.jpg",
@@ -33,10 +35,10 @@ const SlideShow = () => {
         <div className="slideContainer" key={url}>
           <img className="slideImage" src={url} alt={title} />
           <div className="textOverlay">
-            <h4>{title}</h4>
-            <h3>{subTitle}</h3>
-            <p>{content}</p>
-            <button>{buttonText}</button>
+            <h4 className="smallTitle2">{title}</h4>
+            <h3 className="first-para">{subTitle}</h3>
+            <p className="content">{content}</p>
+            <button className="casual-button2">{buttonText}</button>
           </div>
         </div>
       ))}

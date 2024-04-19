@@ -8,33 +8,13 @@ import "../styles/Home.css";
 
 const Home = () => {
   return (
-    <>
-      <div class="upperSection">
+    <div className="homePage">
         <HeaderSection />
         <Content />
         <Parallel />
-      </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <div class="lowerSection">
         <Cards />
         <Subscribe />
-      </div>
-    </>
+    </div>
   );
 };
 

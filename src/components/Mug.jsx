@@ -7,12 +7,12 @@ const Mug = ({ url, isSale, name, price, sale }) => {
     <div className="mug">
       <div className="image">
         <div className="overlay">
-          <img className="mugImage" src={url} alt={name} />
+          <button id="onSale" style={{ display: isSale ? "block" : "none" }}>
+            On Sale.
+          </button>
+          <button id="explore">EXPLORE MUG</button>
         </div>
-        <button id="onSale" style={{ display: isSale ? "block" : "none" }}>
-          On Sale.
-        </button>
-        <button id="explore">EXPLORE MUG</button>
+        <img className="mugImage" src={url} alt={name} />
       </div>
       <br />
       <a href="@" target="_blank" className="muglink">
